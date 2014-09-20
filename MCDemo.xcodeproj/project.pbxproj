@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B80645EF19CD98DF00179447 /* DeviceBrowserTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B80645EE19CD98DF00179447 /* DeviceBrowserTableViewController.m */; };
 		D91F126B187F1D1900F45BC3 /* sample_file1.txt in Resources */ = {isa = PBXBuildFile; fileRef = D91F1269187F1D1900F45BC3 /* sample_file1.txt */; };
 		D91F126C187F1D1900F45BC3 /* sample_file2.txt in Resources */ = {isa = PBXBuildFile; fileRef = D91F126A187F1D1900F45BC3 /* sample_file2.txt */; };
 		D9629273187BD6E600228E81 /* MCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9629272187BD6E600228E81 /* MCManager.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B80645ED19CD98DF00179447 /* DeviceBrowserTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceBrowserTableViewController.h; sourceTree = "<group>"; };
+		B80645EE19CD98DF00179447 /* DeviceBrowserTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceBrowserTableViewController.m; sourceTree = "<group>"; };
 		D91F1269187F1D1900F45BC3 /* sample_file1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample_file1.txt; sourceTree = "<group>"; };
 		D91F126A187F1D1900F45BC3 /* sample_file2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample_file2.txt; sourceTree = "<group>"; };
 		D9629271187BD6E600228E81 /* MCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCManager.h; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 				D91F126A187F1D1900F45BC3 /* sample_file2.txt */,
 				D9EA8C29187B1954008031B5 /* Images.xcassets */,
 				D9EA8C15187B1954008031B5 /* Supporting Files */,
+				B80645ED19CD98DF00179447 /* DeviceBrowserTableViewController.h */,
+				B80645EE19CD98DF00179447 /* DeviceBrowserTableViewController.m */,
 			);
 			path = MCDemo;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				D9629273187BD6E600228E81 /* MCManager.m in Sources */,
 				D9EA8C28187B1954008031B5 /* SecondViewController.m in Sources */,
 				D9EA8C1F187B1954008031B5 /* AppDelegate.m in Sources */,
+				B80645EF19CD98DF00179447 /* DeviceBrowserTableViewController.m in Sources */,
 				D9EA8C25187B1954008031B5 /* FirstViewController.m in Sources */,
 				D9EA8C1B187B1954008031B5 /* main.m in Sources */,
 			);

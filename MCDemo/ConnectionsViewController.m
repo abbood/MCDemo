@@ -83,10 +83,12 @@
 
 #pragma mark - Public method implementation
 
-- (IBAction)browseForDevices:(id)sender {
+- (IBAction)browseForDevicesUsingHelper:(id)sender {
     [[_appDelegate mcManager] setupMCBrowser];
     [[[_appDelegate mcManager] browser] setDelegate:self];
     [self presentViewController:[[_appDelegate mcManager] browser] animated:YES completion:nil];
+}
+- (IBAction)browseForDevices:(id)sender {
 }
 
 

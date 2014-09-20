@@ -61,6 +61,7 @@
     NSDictionary *dict = @{@"peerID": peerID,
                            @"state" : [NSNumber numberWithInt:state]
                            };
+    NSLog(@"we just changed state!");
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"MCDidChangeStateNotification"
                                                         object:nil
