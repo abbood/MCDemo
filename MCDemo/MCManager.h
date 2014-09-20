@@ -9,15 +9,17 @@
 #import <Foundation/Foundation.h>
 #import <MultipeerConnectivity/MultipeerConnectivity.h>
 
-@interface MCManager : NSObject <MCSessionDelegate>
+@interface MCManager : NSObject <MCSessionDelegate, MCNearbyServiceAdvertiserDelegate>
 
 @property (nonatomic, strong) MCPeerID *peerID;
 @property (nonatomic, strong) MCSession *session;
 @property (nonatomic, strong) MCBrowserViewController *browser;
 @property (nonatomic, strong) MCAdvertiserAssistant *advertiser;
+@property (nonatomic) MCNearbyServiceAdvertiser* organicAdvertiser;
 
 -(void)setupPeerAndSessionWithDisplayName:(NSString *)displayName;
 -(void)setupMCBrowser;
 -(void)advertiseSelf:(BOOL)shouldAdvertise;
+- (void)advertiseSelfOrganically;
 
 @end

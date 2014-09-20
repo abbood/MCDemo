@@ -53,6 +53,13 @@
     }
 }
 
+- (void)advertiseSelfOrganically
+{
+    _organicAdvertiser = [[MCNearbyServiceAdvertiser alloc] initWithPeer:_peerID discoveryInfo:@{} serviceType:@"chat-files"];
+    _organicAdvertiser.delegate = self;
+    [_organicAdvertiser startAdvertisingPeer];
+}
+
 
 #pragma mark - MCSession Delegate method implementation
 
@@ -124,6 +131,24 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:@"MCReceivingProgressNotification"
                                                         object:nil
                                                       userInfo:@{@"progress": (NSProgress *)object}];
+}
+
+# pragma mark - MCNearbyServiceAdvertiserDelegate
+- (void)           advertiser:(MCNearbyServiceAdvertiser *)advertiser
+   didNotStartAdvertisingPeer:(NSError *)error {
+    NSLog(@"Failed to advertise Vibereel: %@", [error localizedDescription]);
+}
+
+- (void)           advertiser:(MCNearbyServiceAdvertiser *)advertiser
+ didReceiveInvitationFromPeer:(MCPeerID *)peerID
+                  withContext:(NSData *)context
+            invitationHandler:(void (^)(BOOL, MCSession *))invitationHandler {
+    
+    // Allow the peer to join this Vibereel
+    MCSession *peerSession = [[MCSession alloc] initWithPeer:_peerID];
+    peerSession.delegate = self;
+    invitationHandler(YES, peerSession);
+    NSLog(@"Accepted entry request for peer %@", [peerID displayName]);
 }
 
 @end

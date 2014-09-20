@@ -36,7 +36,8 @@
     
     _appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [[_appDelegate mcManager] setupPeerAndSessionWithDisplayName:[UIDevice currentDevice].name];
-    [[_appDelegate mcManager] advertiseSelf:_swVisible.isOn];
+    //[[_appDelegate mcManager] advertiseSelf:_swVisible.isOn];
+    [[_appDelegate mcManager] advertiseSelfOrganically];
     
     [_txtName setDelegate:self];
     
