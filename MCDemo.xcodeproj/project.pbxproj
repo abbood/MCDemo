@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D91F126B187F1D1900F45BC3 /* sample_file1.txt in Resources */ = {isa = PBXBuildFile; fileRef = D91F1269187F1D1900F45BC3 /* sample_file1.txt */; };
+		D91F126C187F1D1900F45BC3 /* sample_file2.txt in Resources */ = {isa = PBXBuildFile; fileRef = D91F126A187F1D1900F45BC3 /* sample_file2.txt */; };
+		D9629273187BD6E600228E81 /* MCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9629272187BD6E600228E81 /* MCManager.m */; };
 		D9EA8C0F187B1954008031B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9EA8C0E187B1954008031B5 /* Foundation.framework */; };
 		D9EA8C11187B1954008031B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9EA8C10187B1954008031B5 /* CoreGraphics.framework */; };
 		D9EA8C13187B1954008031B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9EA8C12187B1954008031B5 /* UIKit.framework */; };
@@ -22,6 +25,7 @@
 		D9EA8C33187B1955008031B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9EA8C12187B1954008031B5 /* UIKit.framework */; };
 		D9EA8C3B187B1955008031B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9EA8C39187B1955008031B5 /* InfoPlist.strings */; };
 		D9EA8C3D187B1955008031B5 /* MCDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EA8C3C187B1955008031B5 /* MCDemoTests.m */; };
+		D9EA8C48187B225C008031B5 /* ConnectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EA8C47187B225C008031B5 /* ConnectionsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D91F1269187F1D1900F45BC3 /* sample_file1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample_file1.txt; sourceTree = "<group>"; };
+		D91F126A187F1D1900F45BC3 /* sample_file2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample_file2.txt; sourceTree = "<group>"; };
+		D9629271187BD6E600228E81 /* MCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCManager.h; sourceTree = "<group>"; };
+		D9629272187BD6E600228E81 /* MCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCManager.m; sourceTree = "<group>"; };
 		D9EA8C0B187B1954008031B5 /* MCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9EA8C0E187B1954008031B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D9EA8C10187B1954008031B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +64,8 @@
 		D9EA8C38187B1955008031B5 /* MCDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MCDemoTests-Info.plist"; sourceTree = "<group>"; };
 		D9EA8C3A187B1955008031B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D9EA8C3C187B1955008031B5 /* MCDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCDemoTests.m; sourceTree = "<group>"; };
+		D9EA8C46187B225C008031B5 /* ConnectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionsViewController.h; sourceTree = "<group>"; };
+		D9EA8C47187B225C008031B5 /* ConnectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +125,8 @@
 		D9EA8C14187B1954008031B5 /* MCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D9629271187BD6E600228E81 /* MCManager.h */,
+				D9629272187BD6E600228E81 /* MCManager.m */,
 				D9EA8C1D187B1954008031B5 /* AppDelegate.h */,
 				D9EA8C1E187B1954008031B5 /* AppDelegate.m */,
 				D9EA8C20187B1954008031B5 /* Main.storyboard */,
@@ -122,6 +134,10 @@
 				D9EA8C24187B1954008031B5 /* FirstViewController.m */,
 				D9EA8C26187B1954008031B5 /* SecondViewController.h */,
 				D9EA8C27187B1954008031B5 /* SecondViewController.m */,
+				D9EA8C46187B225C008031B5 /* ConnectionsViewController.h */,
+				D9EA8C47187B225C008031B5 /* ConnectionsViewController.m */,
+				D91F1269187F1D1900F45BC3 /* sample_file1.txt */,
+				D91F126A187F1D1900F45BC3 /* sample_file2.txt */,
 				D9EA8C29187B1954008031B5 /* Images.xcassets */,
 				D9EA8C15187B1954008031B5 /* Supporting Files */,
 			);
@@ -233,6 +249,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91F126C187F1D1900F45BC3 /* sample_file2.txt in Resources */,
+				D91F126B187F1D1900F45BC3 /* sample_file1.txt in Resources */,
 				D9EA8C2A187B1954008031B5 /* Images.xcassets in Resources */,
 				D9EA8C19187B1954008031B5 /* InfoPlist.strings in Resources */,
 				D9EA8C22187B1954008031B5 /* Main.storyboard in Resources */,
@@ -254,6 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9EA8C48187B225C008031B5 /* ConnectionsViewController.m in Sources */,
+				D9629273187BD6E600228E81 /* MCManager.m in Sources */,
 				D9EA8C28187B1954008031B5 /* SecondViewController.m in Sources */,
 				D9EA8C1F187B1954008031B5 /* AppDelegate.m in Sources */,
 				D9EA8C25187B1954008031B5 /* FirstViewController.m in Sources */,
@@ -466,6 +486,7 @@
 				D9EA8C42187B1955008031B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9EA8C43187B1955008031B5 /* Build configuration list for PBXNativeTarget "MCDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +495,7 @@
 				D9EA8C45187B1955008031B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
